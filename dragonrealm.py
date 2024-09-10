@@ -17,7 +17,7 @@ def chooseCave():
 
      return cave
 
-def checkCave(chosenCave):
+def story():
      print('You approach the cave...')
      time.sleep(2)
      print('It is dark and spooky...')
@@ -27,18 +27,34 @@ def checkCave(chosenCave):
      time.sleep(2)
 
      friendlyCave = random.randint(1, 2)
+     return friendlyCave
 
-     if chosenCave == str(friendlyCave):
-         print('Gives you his treasure!')
-     else:
+def ending(chosenCave, friendlyCave):
+    if str(chosenCave) == str(friendlyCave):
+        print('Gives you his treasure!')
+        return True
+    else:
         print('Gobbles you down in one bite!')
+        return False
+        
+#def the_other_cave():  
+    
 
 playAgain = 'yes'
 while playAgain == 'yes' or playAgain == 'y':
-     displayIntro()
-     caveNumber = chooseCave()
-     checkCave(caveNumber)
-     
-    
-     print('Do you want to play again? (yes or no)')
-     playAgain = input()
+    displayIntro()
+    caveNumber = chooseCave()
+    friendlyCave = story()
+    end = ending(caveNumber ,friendlyCave)
+    if end == True:
+        print('Do you want to play again? (yes or no)')
+        playAgain = input()
+    else:
+        print("Do you want to see the other ending? (yes or no) ")
+        answer = input()
+        if answer == "yes":
+            friendlyCave = story()
+            end = ending(friendlyCave, friendlyCave)
+            print("")
+        else:
+            break
