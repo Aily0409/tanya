@@ -111,3 +111,14 @@ integers.pop()
 
 print(integers)
 
+fruit_list = ["strawberry", "grapes", "peach"]
+
+del fruit_list[1]
+
+print(fruit_list)
+
+list_of_names= ["Adonis", "Lyra", "Alexis", "Orion"]
+
+list_of_names.append("Artemis")
+
+print(list_of_names)
