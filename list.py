@@ -123,3 +123,17 @@ list_of_names.append("Artemis")
 
 print(list_of_names)
 
+names3 = ["Seb", "Evelyn", "George"]
+
+print(names3.index("Evelyn"))
+
+a_b_c = ["a", "b", "c", "d"]
+
+print(a_b_c.index("c"))
+
+a_list = ["c", "v", "d", "b", "z"]
+
+all_index = [ ]
+
+for elem in range (0,len(a_list)):
+    pass
