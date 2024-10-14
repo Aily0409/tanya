@@ -137,3 +137,24 @@ all_index = [ ]
 
 for elem in range (0,len(a_list)):
     pass
+
+#list comprehension
+#[expression for item in list if condition]
+
+squared2 = [item**2 for item in range(1,10)]
+print(squared2)
+
+numbers= [1,2,3,4,5,6,7,8,9]
+
+for number in numbers:
+    print(number**3)
+    
+    cubic = [numbers**3 for number in numbers]
+    print(cubic)
+    
+    
+    
+    #double the value of the numbers
+    nuumbers = [1,2,3,4,5,6,7,8,9]
+    doubled_numbers = [number*2 for number in numbers if number%2 == 0]
+    print(doubled_numbers)
