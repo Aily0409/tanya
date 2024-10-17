@@ -155,6 +155,6 @@ for number in numbers:
     
     
     #double the value of the numbers
-    nuumbers = [1,2,3,4,5,6,7,8,9]
+    numbers = [1,2,3,4,5,6,7,8,9]
     doubled_numbers = [number*2 for number in numbers if number%2 == 0]
     print(doubled_numbers)
