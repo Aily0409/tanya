@@ -44,7 +44,7 @@ print(result)
 # Use number_list
 # Task: Create a new list, and name it square_numbers, that contains the squares of the original list numbers.
 # Requirements: Use a list comprehension for this task.
-square_numbers = [number**3 for number in number_list]
+square_numbers = [number**2 for number in number_list]
 print(square_numbers)
 #TODO Project 6: Filtering with List Comprehensions (10 points)
 ## Use number_list
@@ -55,7 +55,7 @@ print(filtered_list)
 #TODO Project 7: List inside a list (10 points)
 # Task: append a list (you will create that list) in the position #4 in the list_stuff
 # Print the final list 
-new_list = ["Bella", "Where_have", "been", "loca?"]
+new_list = ["Bella", "Where_have_you", "been", "loca?"]
 list_stuff.insert(4,[new_list])
 print(list_stuff)
 
@@ -70,13 +70,9 @@ for number in number_list:
 # Use the list number_list_2
 # Task: Write a function that takes a list and prints a new list with the odd numbers doubled and even numbers unchanged.
 # Requirements: Use list comprehension inside the function, and print().
-number_list_2=[10,12,2,3,5,13,32,23,9]
 def double_the_odds():
-    total=0
-    for num in number_list_2:
-        if num%2 !=0:
-            total+=num
-            print(total)
+    print([num*2 if num%2 != 0 else num for num in list])
+    double_the_odds(number_list)
 #TODO Project 10: List Sorting and Methods (8 points)
 # Task: Sort the number_list_2 in descending order and print the index of the highest and lowest values in the list.
 # Requirements: Use sort(), index(), Hint: look for max() and min () functions.
