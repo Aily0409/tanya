@@ -51,6 +51,8 @@ def display_accidents_info(accidents_info):
                 print(f"Fatal Crashes under the Influence: {accidents_info[7]}")
             if choice == "9":
                 print(f"Fatal Crashes involving Fatigue or Illness: {accidents_info[8]}")
+            if choice == "10":
+                break
             
         
 def main():
